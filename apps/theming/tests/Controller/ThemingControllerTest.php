@@ -938,6 +938,7 @@ class ThemingControllerTest extends TestCase {
 		slogan: "",
 		color: "#000",
 		inverted: false,
+		cacheBuster: null
 	};
 })();';
 		$expected = new Http\DataDisplayResponse($expectedResponse);
@@ -972,6 +973,7 @@ class ThemingControllerTest extends TestCase {
 		slogan: "awesome",
 		color: "#ffffff",
 		inverted: true,
+		cacheBuster: null
 	};
 })();';
 		$expected = new Http\DataDisplayResponse($expectedResponse);
