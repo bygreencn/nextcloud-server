@@ -44,6 +44,7 @@ $eventDispatcher->addListener(
 	function() {
 		\OCP\Util::addScript('files_sharing', 'share');
 		\OCP\Util::addScript('files_sharing', 'sharetabview');
+		\OCP\Util::addScript('files_sharing', 'sharebreadcrumbview');
 		\OCP\Util::addStyle('files_sharing', 'sharetabview');
 	}
 );

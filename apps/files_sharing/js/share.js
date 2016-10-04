@@ -179,6 +179,9 @@
 				}
 			});
 			fileList.registerTabView(shareTab);
+
+			var breadCrumbSharingDetailView = new OCA.Sharing.ShareBreadCrumbView();
+			fileList.registerBreadCrumbDetailView(breadCrumbSharingDetailView);
 		},
 
 		/**

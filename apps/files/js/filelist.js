@@ -1601,6 +1601,7 @@
 
 			// first entry is the root
 			this.dirInfo = result.shift();
+			this.breadcrumb.setDirectoryInfo(this.dirInfo);
 
 			if (this.dirInfo.permissions) {
 				this.setDirectoryPermissions(this.dirInfo.permissions);
@@ -2922,6 +2923,15 @@
 		registerDetailView: function(detailView) {
 			if (this._detailsView) {
 				this._detailsView.addDetailView(detailView);
+			}
+		},
+
+		/**
+		 * Register a view to be added to the breadcrumb view
+		 */
+		registerBreadCrumbDetailView: function(detailView) {
+			if (this.breadcrumb) {
+				this.breadcrumb.addDetailView(detailView);
 			}
 		}
 	};
